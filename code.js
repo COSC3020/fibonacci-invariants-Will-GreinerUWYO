@@ -11,5 +11,3 @@ function fib(n) {
     
     return values;
 }
-
-console.log(fib(3))
