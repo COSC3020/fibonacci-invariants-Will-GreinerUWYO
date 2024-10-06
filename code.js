@@ -1,9 +1,9 @@
 function fib(n) {
-    return fibStep(n);
+    let values = [];
+    return fibStep(n,values);
 }
 
-function fibStep(n) {
-    let values = [];
+function fibStep(n,values) {
     if (n===0) {
         return [0]; 
     }
