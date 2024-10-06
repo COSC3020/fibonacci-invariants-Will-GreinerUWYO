@@ -1,4 +1,9 @@
 function fib(n) {
+    return fibStep(n);
+}
+
+function fibStep(n) {
+    let values = [];
     if (n===0) {
         return [0]; 
     }
@@ -6,8 +11,7 @@ function fib(n) {
         return [0,1];
     }
     else {
-        let values = [];
-        values[n] = fib(n-1) + fib(n-2);
+        values[n] = fibStep(n-1) + fib(n-2);
     }
     return values;
 }
